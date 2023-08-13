@@ -1,0 +1,91 @@
+@import url("index.css");
+
+
+.body {
+  margin: 40px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+    grid-gap: 10px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 400px;
+    grid-template-areas:
+    "header  header  header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #767474;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: #767474;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 90%;
+}
+
+.header{
+  background-color: #999;
+  color: rgb(174, 213, 245);
+}
+
+.footer {
+  background-color: #999;
+  color: rgb(174, 213, 245);
+}
+
+.sidebar{
+grid-area: sidebar;
+}
+.content{
+grid-area:content;
+
+}
+.card{
+  width: 18rem;
+display: flex;
+flex-direction: column;
+}
+.btn-primary{
+border-radius: 5px;
+
+}
+.Avatar{
+  border: 2px solid rgb(1, 78, 52); ;
+background-image:url("../assets/images/man.png"); 
+background-size: contain;
+width: 100px; 
+height: 100px;
+
+}
+.img-card{
+  background-image:url("../assets/images/book.avif"); 
+  width: 100px; 
+  height: 100px;
+  background-size: contain;
+}
+.img-card2{
+  background-image:url("../assets/images/girl.png"); 
+  width: 100px; 
+  height: 100px;
+  background-size: contain;
+}
+/* If wide enough */
+@media(min-width:900px){
+.container{
+  display:grid;
+
+   
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "header  header  header"
+    "sidebar content content"
+    "footer  footer  footer";
+  
+}
+}

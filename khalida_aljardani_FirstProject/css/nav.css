@@ -1,0 +1,23 @@
+
+
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    align-items: flex-end;
+  max-width: 600px;
+    background-color: rgb(42, 116, 228);
+      background-image: url("../assets/images/worldImg.jpg"); 
+      background-size:cover ;
+  }
+  
+  .navBar > div {
+    border-radius: 20px;
+   background-color: #f9f6f6;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }

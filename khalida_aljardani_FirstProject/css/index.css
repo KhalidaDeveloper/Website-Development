@@ -1,0 +1,101 @@
+@import url("nav.css");
+@import url("blog-post.css");
+
+
+
+  /* css for nested grid  */
+    #nestedGrid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 400px;
+    border-radius: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+  #nestedGrid > *{
+    border: 2px solid rgb(1, 78, 52);
+    border-radius: 10px;
+    
+  }
+  .box{
+      border: 1px solid rgb(54, 53, 53);
+      background: #e8e8da;
+      color: black;
+      border-radius: 20px;
+      }
+   .form-Submit >* {
+  border-radius: 20px ;
+ }
+
+  .ImageGallery{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(190, 3, 3);
+    background: #f8f6c3;
+    color: black;
+    font-weight: bold;
+   align-items: center;
+  
+  }
+
+ #img2{
+  background-image: url("../assets/images/hobby.jpg");
+  background-size: contain;
+  background-repeat:no-repeat ;
+}
+#img1{
+  background-image: url("../assets/images/info.png");
+  background-size: contain;
+  background-repeat:no-repeat ;
+
+}
+#img3{
+  background-image: url("../assets/images/exp.png");
+  background-size: contain;
+  background-repeat:no-repeat ;
+}
+#img4{
+  background-image: url("../assets/images/skills.png");
+  background-size: contain;
+  background-repeat:no-repeat ;
+}
+
+.header{
+        grid-area: hd;  
+       
+      }
+    .footer{
+      grid-area: ft;  
+    }
+    .sidebar{
+      grid-area: sd;
+    }
+    .content{
+      grid-area: main;
+      
+      
+    }
+    .form-Submit{
+      border-radius: 60px;
+      margin: 10px;
+      padding: 10px;
+    }
+  /* If Screen Is Wide Enough */
+  @media(min-width:900px) {
+  .container{
+        display:grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 400px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid rgb(81, 1, 1);
+    }
+  }
+ 
+ 
+  
+  
